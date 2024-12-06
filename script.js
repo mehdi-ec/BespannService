@@ -14,5 +14,5 @@ function toggleBackgroundImage() {
 // Initialize the first image
 toggleBackgroundImage();
 
-// Change the image every 3 seconds
-setInterval(toggleBackgroundImage, 3000);
+// Change the image every 4 seconds
+setInterval(toggleBackgroundImage, 4000);
