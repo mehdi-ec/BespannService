@@ -1,4 +1,4 @@
-const images = ["Tennis1.JPEG", "Badminton1.JPEG"]; // Array of image URLs
+const images = ["Tennis4.JPEG","Tennis1.JPEG", "Badminton5.JPEG", "Badminton1.JPEG"]; // Array of image URLs
 let currentIndex = 0; // Start with the first image
 
 const bgElement = document.querySelector('.bgimg-1'); // Get the div
