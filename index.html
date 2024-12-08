@@ -62,15 +62,15 @@
 
 
             @media screen and (max-width: 768px) {
-            .card-wrapper {
-                flex-direction: column; /* Stacks the cards vertically */
-                align-items: stretch; /* Ensures full-width stacking */
-            }
-            
-            .card-item {
-                margin: 10px 0; /* Adds vertical space between the stacked cards */
-                max-width: 100%; /* Allow the cards to take up full width */
-            }
+                .card-wrapper {
+                    flex-direction: column; /* Stacks the cards vertically */
+                    align-items: stretch; /* Ensures full-width stacking */
+                }
+                
+                .card-item {
+                    margin: 10px 0; /* Adds vertical space between the stacked cards */
+                    max-width: 100%; /* Allow the cards to take up full width */
+                }
             }
 
             .filter-me{
@@ -78,22 +78,18 @@
             }
                 
             @media screen and (max-width: 600px) {
-            .w3-jumbo {
-                font-size: 40px !important; 
+                .w3-jumbo {
+                    font-size: 40px !important; 
+                }
+                .w3-hide-small {
+                    display: block;
+                }
             }
-            .w3-hide-small {
-                display: block;
-            }
-        
-            }
-
-                        
+               
         </style>
     </head>
 
-
     <body>
-
 
 
     <!-- Header with full-height image -->
@@ -110,7 +106,6 @@
     <h3 class="w3-center">Highlights</h3>
     <div class="w3-row-padding w3-center" style="margin-top:64px">
 
-
         <div class="w3-quarter">
             <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
             <p class="w3-large">Erfahrung</p>
@@ -124,12 +119,10 @@
                 Beratung kommt selbstverständlich <b>ohne Zusatzkosten!</b> </p>
             </div>
 
-
-
         <div class="w3-quarter">
-        <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
-        <p class="w3-large">Qualität</p>
-        <p>Dank der elektrischen Bespannungsmaschine garantieren wir <b>präzise Bespannung</b> und erstklassige Qualität für optimale Performance</p>
+            <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+            <p class="w3-large">Qualität</p>
+            <p>Dank der elektrischen Bespannungsmaschine garantieren wir <b>präzise Bespannung</b> und erstklassige Qualität für optimale Performance</p>
         </div>
         
 
@@ -140,129 +133,103 @@
         </div>
 
     </div>
-   
     </div>
 
     <!-- Products -->
     <div class="w3-container" style="padding:1px 16px; padding-bottom:128px" id="team">
-    <h3 class="w3-center">Bespannservice & mehr!</h3>
-    <div class="w3-row-padding w3-grayscale card-wrapper" style="margin-top:64px; display: flex; justify-content: space-between;">
-
-    <div class="w3-col l3 m6 w3-margin-bottom card-item">  
-        <div class="w3-card">
-            <img  src="Tennis3.JPEG" alt="tennisCard" style="width:100%">
-            <div class="w3-container flex-container">
-                <h3>Bespannservice Tennis</h3>
-                <p>Tennissaiten sollen <b>regelmäßig</b> gewächselt werden:
-                    <ul>
-                        <li> Anfänger: <b>1-2 Mal im Jahr</b></li>
-                        <li> Fortgescrittene: <b>3-4 Mal im Jahr</b></li>
-                        <li> Mannschaftspieler: <b>einmal pro 1-2 Monate</b></li>
-                    </ul>
-                </p>
-                <p class="flex-end"><a href="Tennis.html" class="w3-button w3-black w3-block"> zu den Angeboten</a> </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom card-item">
-        <div class="w3-card">
-            <img src="Badminton2.JPEG" alt="badmintonCard" style="width:100%">
-            <div class="w3-container flex-container">
-                <h3>Bespannservice Badminton</h3>
-                <p>Badmintonsaiten sollen <b>regelmäßig</b> gewächselt werden:
-                    <ul>
-                        <li> Anfänger: <b>1-2 Mal im Jahr</b></li>
-                        <li> Fortgescrittene: <b>3-4 Mal im Jahr</b></li>
-                        <li> Mannschaftspieler: <b>einmal pro 1-2 Monate</b></li>
-                    </ul>
-                </p>
-                <p class="flex-end"><a href="Badminton.html" class="w3-button w3-black w3-block"> zu den Angeboten</a> </p>
-            </div>
-        </div>
-    </div>
-
-    <div class="w3-col l3 m6 w3-margin-bottom card-item">
-        <div class="w3-card">
-            <img src="Zubehoer.JPEG" alt="zubehoerCard" style="width:100%">
-            <div class="w3-container">
-                <h3>Zubehör</h3>
-
-                <p>folgende Zubehör stehen aktuell zur Verfügung:
-                    <ul>
-                        <li> <b>Griffband/ Overgrip</b> ab 3€</li>
-                        <li> <b> Basisgrip</b> ab 7€</li>
-                        <li> <b> Dämpfer</b> ab 3€ </li>
-                    </ul>
-                </p>
-
-
-            </div>
-        </div>
-    </div>
-</div>
-
+        <h3 class="w3-center">Bespannservice & mehr!</h3>
         
+        <div class="w3-row-padding w3-grayscale card-wrapper" style="margin-top:64px; display: flex; justify-content: space-between;">
+        
+            <div class="w3-col l3 m6 w3-margin-bottom card-item">  
+                <div class="w3-card">
+                    <img  src="Tennis3.JPEG" alt="tennisCard" style="width:100%">
+                    <div class="w3-container flex-container">
+                        <h3>Bespannservice Tennis</h3>
+                        <p>Tennissaiten sollen <b>regelmäßig</b> gewächselt werden:
+                            <ul>
+                                <li> Anfänger: <b>1-2 Mal im Jahr</b></li>
+                                <li> Fortgescrittene: <b>3-4 Mal im Jahr</b></li>
+                                <li> Mannschaftspieler: <b>einmal pro 1-2 Monate</b></li>
+                            </ul>
+                        </p>
+                        <p class="flex-end"><a href="Tennis.html" class="w3-button w3-black w3-block"> zu den Angeboten</a> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom card-item">
+                <div class="w3-card">
+                    <img src="Badminton2.JPEG" alt="badmintonCard" style="width:100%">
+                    <div class="w3-container flex-container">
+                        <h3>Bespannservice Badminton</h3>
+                        <p>Badmintonsaiten sollen <b>regelmäßig</b> gewächselt werden:
+                            <ul>
+                                <li> Anfänger: <b>1-2 Mal im Jahr</b></li>
+                                <li> Fortgescrittene: <b>3-4 Mal im Jahr</b></li>
+                                <li> Mannschaftspieler: <b>einmal pro 1-2 Monate</b></li>
+                            </ul>
+                        </p>
+                        <p class="flex-end"><a href="Badminton.html" class="w3-button w3-black w3-block"> zu den Angeboten</a> </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col l3 m6 w3-margin-bottom card-item">
+                <div class="w3-card">
+                    <img src="Zubehoer.JPEG" alt="zubehoerCard" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Zubehör</h3>
+
+                        <p>folgende Zubehör stehen aktuell zur Verfügung:
+                            <ul>
+                                <li> <b>Griffband/ Overgrip</b> ab 3€</li>
+                                <li> <b> Basisgrip</b> ab 7€</li>
+                                <li> <b> Dämpfer</b> ab 3€ </li>
+                            </ul>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 
 
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image">
-        <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
+        <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
     </div>
 
     
 
     <!-- Contact Section -->
     <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-    <h3 class="w3-center">Kontakt</h3>
-    <p class="w3-center w3-large">Möchtest Du einen Termin zum Bespannen ausmachen? Oder hast Du Fragen? 
-        <br> Schreib mir einfach eine Nachricht auf WhatsApp – ich melde mich schnellstmöglich zurück!</p>
-    <div style="margin-top:48px">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> adress</p>
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 0163  </p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> email@gmail.com</p>
+        <h3 class="w3-center">Kontakt</h3>
+        <p class="w3-center w3-large">Möchtest Du einen Termin zum Bespannen ausmachen? Oder hast Du Fragen? 
+            <br> Schreib mir einfach eine Nachricht auf WhatsApp – ich melde mich schnellstmöglich zurück!</p>
+        <div style="margin-top:48px">
+            <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> adress</p>
+            <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> 0163  </p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> email@gmail.com</p>
 
-    </div>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64">
-
-    <p>Powered by w3.css </p>
+        <div class="w3-xlarge w3-section">
+            <a class="fa fa-instagram w3-hover-opacity" href="https://www.instagram.com/meuch_tennis/profilecard/?igsh=MWcwcndlMDBweDc4MQ=="></a>
+            <a class="fa fa-whatsapp w3-hover-opacity" href="https://wa.me/+491794241063"></a>
+        </div>
+        <a href="Impressum.html" > Impressum</a>
     </footer>
     
-    <script>
-    // Modal Image Gallery
-    function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-    }
-
-
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-
-    function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-    } else {
-        mySidebar.style.display = 'block';
-    }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-        mySidebar.style.display = "none";
-    }
-    </script>
-
     </body>
 </html>
