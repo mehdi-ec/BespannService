@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>W3.CSS Template</title>
+        <title>Besaitung München</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -94,7 +94,41 @@
 
     <!-- Header with full-height image -->
     <header class="bgimg-1 w3-display-container w3-grayscale-min filter-me" id="home">
-    <script src="script.js"></script>
+        
+        <script>
+            const bgElement = document.querySelector(".bgimg-1"); // Get the div
+            // Array of image URLs
+            const images = ["Assets/Tennis1.JPEG", "Assets/Badminton1.JPEG"];
+            let currentIndex = 0; // Start with the first image
+
+            // Preload all images to avoid delay when changing the background
+            const preloadImages = images.map(image => {
+                const img = new Image();
+                img.src = image;
+                return img;
+            }); 
+                  
+
+            function toggleBackgroundImage() {
+                // Update the background image
+                bgElement.style.transition = "background-image 1s ease-in-out"; // Smooth transition
+                bgElement.style.backgroundImage = `url("${images[currentIndex]}")`;
+        
+                // Toggle the index between 0 and 1
+                currentIndex = (currentIndex + 1) % images.length;
+            }
+        
+            // Set an initial background immediately to avoid the white screen
+            bgElement.style.backgroundImage = `url("${images[0]}")`;
+        
+            // Initialize the first image immediately
+            toggleBackgroundImage();
+        
+            // Change the image every 4 seconds
+            setInterval(toggleBackgroundImage, 4000);
+        </script>
+        
+
     <div class="w3-display-left w3-text-white" style="padding:48px; text-shadow: 1px 0 10px black;">
         <span class="w3-jumbo w3-hide-small" > <b> Bespannservice München Obersendling </b></span><br>
     </div> 
@@ -103,19 +137,19 @@
 
     <!-- About Section -->
     <div class="w3-container" style="padding:128px 16px" id="about">
-    <h3 class="w3-center">Dafür stehen wir!</h3>
+    <h3 class="w3-center">Das zeichnet uns aus!</h3>
     <div class="w3-row-padding w3-center" style="margin-top:64px">
 
         <div class="w3-quarter">
             <i class="fa fa-trophy w3-margin-bottom w3-jumbo w3-center"></i>
-            <p class="w3-large">Erfahrung</p>
+            <p class="w3-large">Expertise</p>
             <p>Mit umfassender <b>Expertise und Langjähriger Erfahrung</b> bieten wir professionelle Bespannung für Tennis und Badminton Schläger an</p>
             </div>
 
         <div class="w3-quarter">
             <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
-            <p class="w3-large">Beratung</p>
-            <p> Erfahrene Trainer beraten Dich gerne bei der Auswahl der Saiten und Bespannungswerten. Die 
+            <p class="w3-large">Große Auswahl</p>
+            <p> Erfahrene Trainer beraten Dich bei der Auswahl der richtigen Saiten und Bespannungswerten. Die 
                 Beratung kommt selbstverständlich <b>ohne Zusatzkosten!</b> </p>
             </div>
 
